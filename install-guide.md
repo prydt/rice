@@ -23,8 +23,7 @@ nmtui # activate wifi!!!
 
 ## set up i3-gaps
 ```sh
-sudo pacman -S i3-gaps i3lock i3status lightdm lightdm-gtk-greeter alacritty
-echo "exec i3" > ~/.xinitrc
+sudo pacman -S i3-gaps i3lock i3status gtk3 alacritty
 ```
 
 ## pywal
@@ -48,11 +47,17 @@ systemctl start cronie
 
 ## set up audio
 ```sh
-sudo pacman -S alsa-utils pulseaudio-alsa pavolume
+sudo pacman -S alsa-utils pulseaudio-alsa
 ```
 
 ## etc packages
 ```sh
 sudo pacman -S man-db neovim vifm z
 yay -S gohufont
+```
+
+## set up nvim
+```sh
+# install Vundle
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```

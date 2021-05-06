@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/pry/.config/vifm'
+let g:netrw_dirhist_3='/home/pry/repos/rice'
+let g:netrw_dirhist_2='/home/pry/repos'
+let g:netrw_dirhist_1='/home/pry/.config/alacritty'

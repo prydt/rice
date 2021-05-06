@@ -1,2 +1,2 @@
 # rice
-my experimental arch config
+My Arch Linux config
