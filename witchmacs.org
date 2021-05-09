@@ -1,0 +1,14 @@
+* Emacs Journey Part 2: Witchmacs!!
+** Why Witchmacs over Doom Emacs?
+Witchmacs is a much more minimal initial config and I believe that it is easier to add my own configuration to a simpler initial config.
+
+In short, Doom Emacs is very featureful, but when it comes to adding to it, I'm not sure where to start.
+
+** The Installation Process
+Literally as simple as running:
+#+BEGIN_SRC sh
+git clone https://github.com/snackon/Witchmacs ~/.emacs.d
+#+END_SRC
+** My personal configurations
+I added several things to the .emacs.d/config.org file which is the main configuration file for witchmacs and it feels quite nice!
+
