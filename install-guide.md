@@ -12,6 +12,7 @@ station *device* connect *SSID*
 
 archinstall # this will guide you through the rest of the arch install process
 ```
+packages to install during archinstall: `networkmanager`
 
 ## setting up wifi
 ```sh
