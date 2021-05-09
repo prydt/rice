@@ -24,7 +24,7 @@ nmtui # activate wifi!!!
 
 ## set up i3-gaps
 ```sh
-sudo pacman -S i3-gaps i3lock i3status gtk3 alacritty
+sudo pacman -S i3-gaps dmenu i3lock i3status gtk3 alacritty feh
 ```
 
 ## pywal
@@ -53,7 +53,7 @@ sudo pacman -S alsa-utils pulseaudio-alsa
 
 ## etc packages
 ```sh
-sudo pacman -S man-db neovim vifm z
+sudo pacman -S man-db neovim vifm z stow
 yay -S gohufont
 ```
 

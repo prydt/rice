@@ -2,20 +2,23 @@
 
 # run in this directory after installing arch and connecting to wifi
 
+# TODO remove after testing stow setup
 # copy all dotfiles
-cp .bash_profile ~
-cp .bashrc ~
-cp .editorconfig ~
-cp .gitconfig ~
-cp .vimrc ~
-cp .xinitrc ~
-cp -r .emacs.d ~
-cp -r .config ~
-
+# cp .bash_profile ~
+# cp .bashrc ~
+# cp .editorconfig ~
+# cp .gitconfig ~
+# cp .vimrc ~
+# cp .xinitrc ~
+# cp -r .emacs.d ~
+# cp -r .config ~
 # copy all dotfiles
 # cp -r \.* ~
 
-sudo pacman -S i3-gaps i3lock i3status gtk3 alacritty python-pywal alsa-utils pulseaudio-alsa man-db neovim vifm z curl
+sudo pacman -S i3-gaps i3lock i3status dmenu feh gtk3 alacritty python-pywal alsa-utils pulseaudio-alsa man-db neovim vifm z curl noto-fonts firefox stow
+
+# symlink all dotfiles
+stow -t ~ dotfiles
 
 # set wallpaper
 curl https://wallpapercave.com/wp/wp4676582.jpg > ~/wallpaper.jpg
@@ -32,3 +35,5 @@ yay -S gohufont
 
 # install vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+reboot
