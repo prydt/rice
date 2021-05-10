@@ -1,6 +1,8 @@
 # rice
 My Arch Linux config
 
+![a screenshot of my setup](./screenshot.png)
+
 ## My Current Setup
 | | |
 |-|-|
