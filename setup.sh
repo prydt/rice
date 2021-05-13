@@ -18,6 +18,7 @@
 sudo pacman -S i3-gaps i3lock i3status dmenu feh gtk3 alacritty python-pywal alsa-utils pulseaudio-alsa man-db neovim vifm z curl noto-fonts firefox stow zathura zathura-pdf-mupdf zathura-djvu
 
 # symlink all dotfiles
+rm ~/.bashrc ~/.bash_profile
 stow -t ~ dotfiles
 
 # set wallpaper
