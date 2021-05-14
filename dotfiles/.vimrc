@@ -30,6 +30,7 @@ set ai " auto indent
 set si " smart indent
 set clipboard=unnamedplus " clipboard = normal clipboard
 set list " show special characters
+set colorcolumn=80
 
 " keybinding changes
 map <C-n> :NERDTreeToggle<LF>
