@@ -182,7 +182,7 @@ bar {
         status_command i3status
 }
 
-
+exec flameshot
 
 
 # GAPS
@@ -312,3 +312,8 @@ mode "$mode_gaps_left" {
 for_window [class=".*"] border pixel 1
 hide_edge_borders both
 smart_gaps on
+
+
+# backlighting
+bindsym $mod+Home exec --no-startup-id xbacklight -inc 10
+bindsym $mod+End exec --no-startup-id xbacklight -dec 10

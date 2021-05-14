@@ -1,21 +1,13 @@
 #!/bin/sh
 
 # run in this directory after installing arch and connecting to wifi
+sudo pacman -S i3-gaps i3lock i3status dmenu feh gtk3 alacritty python-pywal alsa-utils pulseaudio-alsa man-db neovim vifm z curl noto-fonts firefox stow zathura zathura-pdf-mupdf zathura-djvu htop openssh xclip flameshot tlp xorg-xbacklight powertop
 
-# TODO remove after testing stow setup
-# copy all dotfiles
-# cp .bash_profile ~
-# cp .bashrc ~
-# cp .editorconfig ~
-# cp .gitconfig ~
-# cp .vimrc ~
-# cp .xinitrc ~
-# cp -r .emacs.d ~
-# cp -r .config ~
-# copy all dotfiles
-# cp -r \.* ~
+sudo systemctl enable tlp
+sudo systemctl start tlp
 
-sudo pacman -S i3-gaps i3lock i3status dmenu feh gtk3 alacritty python-pywal alsa-utils pulseaudio-alsa man-db neovim vifm z curl noto-fonts firefox stow zathura zathura-pdf-mupdf zathura-djvu
+sudo powertop --calibrate
+sudo curl https://gist.githubusercontent.com/prydt/b4e2ec0ec90715c5f24adb0f8d01f72a/raw/165c0001d1186db6de356c80152d67cfe08d87ad/powertop.service > /etc/systemd/system/powertop.service
 
 # symlink all dotfiles
 rm ~/.bashrc ~/.bash_profile

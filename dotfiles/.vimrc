@@ -7,6 +7,7 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-sensible'
+Plugin 'tpope/vim-commentary'
 Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
@@ -20,7 +21,7 @@ call vundle#end()
 
 filetype plugin indent on
 
-colorscheme onedark
+" colorscheme onedark
 let g:airline_theme='onedark'
 set shiftwidth=4 smartindent expandtab " tabs
 set number  " line numbers

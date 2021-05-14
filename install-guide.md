@@ -62,3 +62,12 @@ yay -S gohufont
 # install Vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
+
+## power management
+```sh
+sudo pacman -S tlp
+sudo pacman -S tp_smapi acpi_call # for ThinkPads only
+
+sudo systemctl enable tlp
+sudo systemctl start tlp
+```
