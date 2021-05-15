@@ -17,4 +17,4 @@ PS1='[\u@\h \W]\$ '
 # import wal theme
 (cat ~/.cache/wal/sequences &)
 
-PATH=$PATH:~/.emacs.d/bin
+export PATH="$PATH:$HOME/.emacs.d/bin:$HOME/go/bin"

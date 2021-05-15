@@ -71,3 +71,29 @@ sudo pacman -S tp_smapi acpi_call # for ThinkPads only
 sudo systemctl enable tlp
 sudo systemctl start tlp
 ```
+
+## set up firewall
+```sh
+sudo pacman -S ufw
+sudo systemctl enable ufw
+sudo systemctl start ufw
+```
+
+## set up automounting USB
+```udiskiesh
+sudo pacman -S udisks2 udiskie
+echo "udiskie &" >> ~/.xinitrc
+```
+
+## Progamming Languages
+```sh
+sudo pacman -S clang
+sudo pacman -S go go-tools # NOTE: add GOPATH to your path
+sudo pacman -S jdk-openjdk
+sudo pacman -S nodejs npm
+sudo pacman -S chicken
+sudo pacman -S rustup
+rustup default stable
+
+sudo pacman -S texlive-core texlive-latexextra
+```
