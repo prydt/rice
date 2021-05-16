@@ -1,4 +1,4 @@
 wal -R
 ~/.fehbg &
-udiskie &
+udiskie -s &
 exec i3

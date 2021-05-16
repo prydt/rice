@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # run in this directory after installing arch and connecting to wifi
-sudo pacman -S i3-gaps i3lock i3status dmenu feh gtk3 alacritty python-pywal alsa-utils pulseaudio-alsa man-db neovim vifm z curl noto-fonts firefox stow zathura zathura-pdf-mupdf zathura-djvu htop openssh xclip flameshot tlp xorg-xbacklight powertop ufw xdg-user-dirs sshfs udisks2 udiskie mpv youtube-dl texlive-core texlive-latexextra clang go go-tools jdk-openssh nodejs npm chicken rustup
+sudo pacman -S i3-gaps i3lock i3status-rust dmenu feh gtk3 alacritty python-pywal alsa-utils pulseaudio-alsa man-db neovim vifm z curl noto-fonts firefox stow zathura zathura-pdf-mupdf zathura-djvu zathura-cb htop openssh xclip flameshot tlp xorg-xbacklight powertop ufw xdg-user-dirs sshfs udisks2 udiskie mpv youtube-dl texlive-core texlive-latexextra clang go go-tools jdk-openssh nodejs npm chicken rustup pcmanfm gvfs ntfs-3g tldr tree
 
 rustup default stable
 
@@ -33,5 +33,6 @@ yay -S gohufont informant
 
 # install vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
 
 reboot
