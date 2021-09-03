@@ -14,6 +14,9 @@ sudo systemctl start ufw
 sudo powertop --calibrate
 sudo curl https://gist.githubusercontent.com/prydt/b4e2ec0ec90715c5f24adb0f8d01f72a/raw/165c0001d1186db6de356c80152d67cfe08d87ad/powertop.service > /etc/systemd/system/powertop.service
 
+sudo systemctl enable powertop
+sudo systemctl start powertop
+
 # symlink all dotfiles
 rm ~/.bashrc ~/.bash_profile
 stow -t ~ dotfiles
@@ -33,6 +36,6 @@ yay -S gohufont informant
 
 # install vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-vim +PluginInstall +qall
+nvim +PluginInstall +qall
 
 reboot

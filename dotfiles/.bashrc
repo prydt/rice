@@ -7,6 +7,8 @@
 
 alias ls='ls --color=auto'
 alias vim="nvim"
+alias vact="source ./venv/bin/activate"
+alias diary="python /home/pry/repos/diary/diary.py"
 
 # prompt
 PS1='[\u@\h \W]\$ '
@@ -18,3 +20,8 @@ PS1='[\u@\h \W]\$ '
 (cat ~/.cache/wal/sequences &)
 
 export PATH="$PATH:$HOME/.emacs.d/bin:$HOME/go/bin"
+HISTSIZE=5000
+HISTFILESIZE=10000
+
+export RISCV=$HOME/RISCV
+export PATH=$PATH:$RISCV/bin
