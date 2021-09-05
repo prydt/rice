@@ -9,6 +9,7 @@ alias ls='ls --color=auto'
 alias vim="nvim"
 alias vact="source ./venv/bin/activate"
 alias diary="python /home/pry/repos/diary/diary.py"
+alias o="xdg-open"
 
 # prompt
 PS1='[\u@\h \W]\$ '
